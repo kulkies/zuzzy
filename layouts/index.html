@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ .Site.Title }}</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 25px;
+            line-height: 1.6;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 70px 0 80px;
+            border-bottom: none;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .hero-text {
+            max-width: 1000px;
+        }
+
+        
+
+        .hero h1 {
+            font-size: 56px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .hero-title {
+            font-size: 24px;
+            margin: 10px 0 20px;
+            color: #555;
+        }
+
+        .hero-description {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .hero-links a {
+            margin-right: 22px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #cd166b;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        
+        .intro {
+            font-size: 18px;
+            margin-top: 30px;
+            max-width: 700px;
+        }
+
+        
+        .experience-item {
+            margin-top: 15px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-meta {
+            color: #555;
+            margin-top: 1px;   
+        }
+
+        .experience-tags {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .experience-details {
+            margin-top: 10px;
+            color: #081345;
+        }
+
+        .experience-details summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        @media (max-width: 700px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+        }
+
+        .hero-title {
+            font-size: 21px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <img src="/images/profile.jpg" alt="Deepa" class="profile-image">
+    
+        <div class="hero-text">
+               
+            <h1>Deepa Kulkarni</h1>
+    
+            <p class="hero-title">Analog, Arts & more! </p>
+    
+            <p class="hero-description">
+                Interested in Analog and Mixed-signal electronics. 
+                I love understanding how circuits behave from the device level upward.
+                Apart from electronics, I enjoy reading vedic literature & fine arts! 
+            </p>
+    
+            <div class="hero-links">
+                <a href="#contact">Find me @ :)</a>
+            </div>
+        </div>
+    
+    </header>
+
+    <section class="intro">
+        {{ .Content }}
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am an Analog IC Designer with hands-on experience in circuit design 
+            across 28 nm – 180 nm technologies. 
+            I worked at Omni Design Technologies as an analog ic design intern,
+            where I worked on Design and verification of ADC blocks in 28nm CMOS.
+            <br><br>
+
+            I also worked as a Research Intern at BITS Pilani under 
+            Prof. Neeraj Mishra, where I used gm/ID methodology to develop lookup 
+            tables for analog circuit design. I automated device characterization 
+            and data processing using Python and MATLAB, and applied
+            the results to the design and analysis of 
+            CMOS circuits such as 5TOTA, CS Amp, and more.
+            <br><br>
+
+            <i><b>WRITE YOUR RESEARCH INTERESTS</i></b>
+            <br> 
+            <i><b>Other interests and gifts</b></i>
+
+        </p>
+    </section>
+
+
+    <section class="experience">
+
+        <h2>Experience</h2>
+    
+        <div class="experience-item">
+    
+            <h3>Analog Design Intern</h3>
+    
+            <p class="experience-meta">
+                <i><b>Omni Design Technologies · Bengaluru · 2026</b></i>
+            </p>
+    
+            <p class="experience-tags">
+                ADC Building Blocks · Bandgap References ·
+                Current Mirror · Level Shifters · 28 nm CMOS ·
+                Cadence Virtuoso
+            </p>
+    
+            <details class="experience-details">
+    
+                <summary>View details</summary>
+    
+                <p>
+                    <strong>Block Designs:</strong>
+                    Designed 1.2 V and 0.8 V bandgap references,
+                    0.9 V → 0.95 V and 0.95 V → 1.8 V level shifters,
+                    and 10 µA and 100 µA current mirror circuits
+                    in 28 nm CMOS.
+                </p>
+    
+                <ul>
+                    <li>
+                        <strong>Level Shifters:</strong>
+                        Redesigned level-shifter circuits for reliable
+                        voltage-domain interfacing and evaluated their
+                        performance across PVT corners and Monte Carlo variations.
+                    </li>
+    
+                    <li>
+                        <strong>Bandgap References:</strong>
+                        Designed and simulated 1.2 V and 0.8 V bandgap
+                        reference circuits, evaluating reference-voltage
+                        behaviour across process, supply, and temperature variations.
+                    </li>
+    
+                    <li>
+                        <strong>Current Mirrors:</strong>
+                        Designed 10 µA and 100 µA current mirror circuits,
+                        analysing current matching and output behaviour
+                        across operating conditions.
+                    </li>
+                </ul>
+    
+            </details>
+    
+        </div>
+        
+        <div class="experience-item">
+    
+            <h3>Analog Research Intern</h3>
+    
+            <p class="experience-meta">
+                <i><b>BITS Pilani · June – October 2025 · Remote</b></i>
+            </p>
+    
+            <p class="experience-tags">
+                gm/ID Methodology · MOSFET Characterization · Python · MATLAB · 45 nm CMOS ·
+                Cadence Virtuoso
+            </p>
+    
+            <details class="experience-details">
+    
+                <summary>View details</summary>
+                <p>
+                    <strong>Device Characterization:</strong>
+                    Characterized NMOS and PMOS devices using the gm/ID
+                    methodology and generated design tables for analog
+                    transistor biasing and sizing.
+                </p>
+    
+                <ul>
+                    <li>
+                        <strong>Common-Source Amplifier:</strong>
+                        Designed and simulated a resistively loaded CS amplifier,
+                        achieving 14 dB gain and 10 MHz bandwidth.
+                    </li>
+                    
+                    <li>
+                        <strong>5T OTA:</strong>
+                        Designed a 5-transistor OTA in 45 nm CMOS, achieving
+                        32 dB gain, 52 MHz bandwidth, 92° phase margin, and
+                        40 dB CMRR.
+                    </li>
+        
+                    <li>
+                        <strong>Design Automation:</strong>
+                        Automated gm/ID data processing using Python and MATLAB,
+                        including processing CSV data generated from device
+                        characterization simulations.
+                    </li>
+        
+                    <li>
+                        <strong>Additional Work:</strong>
+                        Developed an interactive Google Colab interface and
+                        studied oscillator topologies using Razavi's PLL textbook.
+                    </li>
+                </ul>
+    
+            </details>
+    
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+      
+        <div class="project-item">
+          <h3>
+            <a href="https://github.com/kulkies/Bandgap_Reference_Circuit" target="_blank">
+              Bandgap Reference
+            </a>
+          </h3>
+      
+            <ul>
+                <li>Designed 1.2V & 0.8V bandgap references in 28 nm CMOS with ~10 µA bias current.</li>
+                <li>Performed PVT and Monte Carlo simulations to evaluate reference accuracy and variation.</li>
+            </ul>
+      
+          <details class="experience-details">
+            <summary>View images</summary>
+      
+            <div class="project-images">
+              <!-- Images will go here -->
+            </div>
+          </details>
+        </div>
+
+        <div class="project-item">
+            <h3>
+                <a href="https://github.com/kulkies/Level-Shifters">
+                  Level Shifter 
+                </a>
+              </h3>
+                <ul>
+                    <li>Designed level-shifter circuits for reliable signal interfacing between a 0.9 V analog domain and
+                        0.95 V / 1.8 V digital supply domains. </li>
+                </ul>
+          
+              <details class="experience-details">
+                <summary>View images</summary>
+          
+                <div class="project-images">
+                  <!-- Images will go here -->
+                </div>
+              </details>
+        </div>
+      
+    </section>
+    
+   
+    <section>
+        <h2>Education</h2>
+        <h3>PES University, Bangalore, India : 2022-2026</h3>                  
+    
+        <p>
+            <i><strong>Bachelor of Engineering - Electronics 
+                and Communication Engineering</strong></i>
+        </p>
+    
+        <p>
+            CGPA: 8.1 / 10
+        </p>
+    
+        <p>
+            Courses taken: Signals & Systems, Control Systems,
+            Network Analysis, Analog Circuit Design,
+            Computer Communication Networks, Digital System Design,
+            Electromagnetic Field Theory
+        </p>
+    </section>
+    
+    <section>
+        <h2>Publications</h2>
+    
+        <div class="publication-item">
+            <h3>
+                <a href="YOUR_IEEE_PAPER_LINK" target="_blank">
+                    Comparative Analysis of LLC, DAB, and Hybrid LLC–DAB
+                    Bidirectional DC–DC Converters for 2.2 kW EV On-Board
+                    Power Applications
+                </a>
+            </h3>
+    
+            <p>
+                Guna S G, <strong>Deepa Kulkarni</strong>, H S Yashaswini, Harshitha R Hedge, Prof Satya Prasad.
+            </p>
+    
+            <p>
+                IEEE CONECCT 2026 · July 2026
+            </p>
+    
+            <p>
+                Comparative analysis of 2.2 kW LLC, DAB, and Hybrid LLC–DAB
+                bidirectional DC–DC converters for EV on-board power
+                applications using MATLAB/Simulink. The study evaluates
+                efficiency, output power, output current, THD, and
+                Zero-Voltage Switching performance across 10–100% load
+                conditions, achieving peak efficiencies of up to 96.5%.
+            </p>
+            
+            <details class="experience-details">
+                <summary>View abstract</summary>
+            
+                <p>
+                    In electric vehicle (EV) and medium-power auxiliary applications, 
+                    where high efficiency and steady operation over 
+                    broad load ranges are necessary, isolated DC–DC converters are essential.
+                    Three separate converter topologies the LLC resonant converter,
+                    the Dual Active Bridge (DAB) converter, and an LLC–DAB hybrid architecture all intended for a 
+                    rated power of 2.2 kW are compared using simulation in this paper. To ensure fair comparison, 
+                    MATLAB/Simulink is used to model and evaluate the converters under identical electrical specifications. 
+                    For load conditions ranging from 10\% to 100\%, performance metrics such as output power, output current, 
+                    and efficiency are examined. Additionally, each converter's power quality is assessed using Total Harmonic
+                    Distortion (THD) assessment, and soft-switching behavior is methodically investigated 
+                    using Zero Voltage Switching (ZVS) analysis. The LLC–DAB hybrid topology offers better performance balance across the whole operating range, making it a promising candidate for auxiliary DC power applications and electric vehicle applications. This paper highlights the trade-offs between efficiency, area, and power quality.
+                    
+                    <b>Index Terms </b>
+                    
+                    <i>LLC Resonant Converter, Dual Active Bridge (DAB), Soft-Switching, Zero Voltage Switching (ZVS), 
+                    Bidirectional Power Flow, Total Harmonic Distortion (THD), Electric Vehicles, Hybrid Converter</i>
+                    
+                </p>
+            </details>
+            
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications & Courses</h2>
+               
+        <h3>
+            <a href="/images/Cense%20Summer%20school%20Certificate.pdf" target="_blank">
+                CeNSE Summer School on Semiconductor Technology June-2025</a>
+        </h3>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    
+        <p>
+            You can reach out to me on these.. Happy to talk, & collaborate on
+            fun stuff.  
+        </p>
+    
+        <p>
+            <a href="mailto:deepatkulk2003@gmail.com">Email</a>
+            ·
+            <a href="https://www.linkedin.com/in/deepakulkarni18/" target="_blank">LinkedIn</a>
+            ·
+            <a href="https://github.com/kulkies/" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+</body>
+</html>

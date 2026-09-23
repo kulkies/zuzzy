@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 25px;
+            line-height: 1.7;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 45px;
+        }
+
+        .date {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="back" href="/">← Back to Home</a>
+
+    <main>
+
+        <h1>{{ .Title }}</h1>
+
+        <div class="date">
+            {{ .Date.Format "January 2006" }}
+        </div>
+
+        <article>
+            {{ .Content }}
+        </article>
+
+    </main>
+
+</body>
+</html>

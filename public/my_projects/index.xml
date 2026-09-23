@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>My_projects on Deepa — Analog IC Design</title>
+		<link>http://localhost:1313/my_projects/</link>
+		<description>Recent content in My_projects on Deepa — Analog IC Design</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/my_projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Bandgap Reference</title>
+				<link>http://localhost:1313/my_projects/bandgap/</link>
+				<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/my_projects/bandgap/</guid>
+				<description>&lt;h1 id=&#34;bandgap-reference&#34;&gt;Bandgap Reference&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Designed and simulated bandgap reference circuits during my Analog Design internship at Omni Design Technologies.&lt;/p&gt;&#xA;&lt;p&gt;The work included a 1.2 V bandgap reference and an 0.8 V bandgap reference in a 28 nm technology.&lt;/p&gt;&#xA;&lt;h2 id=&#34;12-v-bandgap-reference&#34;&gt;1.2 V Bandgap Reference&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technology: 28 nm&lt;/li&gt;&#xA;&lt;li&gt;Supply voltage: 1.8 V&lt;/li&gt;&#xA;&lt;li&gt;Reference output: approximately 1.2 V&lt;/li&gt;&#xA;&lt;li&gt;Reference current: approximately 100 µA&lt;/li&gt;&#xA;&lt;li&gt;BJT ratio: 1:8&lt;/li&gt;&#xA;&lt;li&gt;Temperature range: −40°C to 125°C&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;&#xA;&lt;p&gt;The circuit combines:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
